@@ -5,7 +5,8 @@ import loginData from '../fixtures/loginData.json'
 
 describe('All test bundle', () => {
 
-    it('login flow test 1', () => {
+
+    it('test 1- login with valid creadentials', () => {
         loginPageObj.openURL()
         loginPageObj.enterEmail(loginData.email)
         loginPageObj.enterPassword(loginData.password)
@@ -13,7 +14,7 @@ describe('All test bundle', () => {
         loginPageObj.loginSuccess()
     })
 
-    it('login flow test 2', () => {
+    it('test 2 - login with invalid creadentials', () => {
         loginPageObj.openURL()
         loginPageObj.enterEmail(loginData.email)
         loginPageObj.enterPassword(loginData.password2)
@@ -21,4 +22,13 @@ describe('All test bundle', () => {
         loginPageObj.loginSuccess()
 
     })
+})
+
+it('test 3 - outside describe login with invalid credentials', () => {
+    loginPageObj.openURL()
+    loginPageObj.enterEmail(loginData.email)
+    loginPageObj.enterPassword(loginData.password2)
+    loginPageObj.clickOnLoginSubmitButton()
+    loginPageObj.loginSuccess()
+
 })
