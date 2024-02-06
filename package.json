@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "echo I am in pretest run",
+    "posttest": "echo I am in posttest run",
+    "test": "echo I am in test"
   },
   "author": "Shubham",
   "license": "ISC",

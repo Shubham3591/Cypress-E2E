@@ -1,4 +1,4 @@
-import { loginPage } from "./pages/loginPage";
+import { loginPage } from "../pages/loginPage";
 const loginPageObj = new loginPage()
 import loginData from '../fixtures/loginData.json'
 
