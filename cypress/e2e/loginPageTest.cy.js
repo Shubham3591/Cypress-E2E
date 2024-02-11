@@ -19,7 +19,7 @@ describe('All test bundle', () => {
         loginPageObj.enterEmail(loginData.email)
         loginPageObj.enterPassword(loginData.password2)
         loginPageObj.clickOnLoginSubmitButton()
-        loginPageObj.loginSuccess()
+        loginPageObj.loginFail()
 
     })
 })
@@ -29,6 +29,6 @@ it('test 3 - outside describe login with invalid credentials', () => {
     loginPageObj.enterEmail(loginData.email)
     loginPageObj.enterPassword(loginData.password2)
     loginPageObj.clickOnLoginSubmitButton()
-    loginPageObj.loginSuccess()
+    loginPageObj.loginFail()
 
 })

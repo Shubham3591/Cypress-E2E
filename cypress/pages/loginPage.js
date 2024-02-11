@@ -6,6 +6,7 @@ export class loginPage{
         password = "#input-password"
         loginSubmitButton = "input[value='Login']"
         loginSuccessBtn = "My Orders"
+        loginFailText = "#account-login > div.alert.alert-danger.alert-dismissible"
 
     openURL(){
         cy.visit(Cypress.env('URL'))
@@ -35,5 +36,9 @@ export class loginPage{
     loginSuccess(){
         cy.contains(this.loginSuccessBtn)
         
+    }
+
+    loginFail(){
+        cy.get(this.loginFailText)
     }
 }
