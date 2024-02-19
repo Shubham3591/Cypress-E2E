@@ -31,14 +31,14 @@ export class loginPage{
     clickOnLoginSubmitButton(){
         cy.get(this.loginSubmitButton).click()
         cy.wait(2000)
-    }
+gi    }
 
     loginSuccess(){
         cy.contains(this.loginSuccessBtn)
         
     }
 
-     loginFail(){
+    loginFail(){
         cy.get(this.loginFailText)
     }
 }
