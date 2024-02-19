@@ -38,7 +38,7 @@ export class loginPage{
         
     }
 
-    loginFail(){
+     loginFail(){
         cy.get(this.loginFailText)
     }
 }

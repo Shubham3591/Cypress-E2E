@@ -14,7 +14,7 @@ describe('All test bundle', () => {
         loginPageObj.loginSuccess()
     })
 
-    it('test 2 - login with invalid creadentials', () => {
+   it('test 2 - login with invalid creadentials', () => {
         loginPageObj.openURL()
         loginPageObj.enterEmail(loginData.email)
         loginPageObj.enterPassword(loginData.password2)
