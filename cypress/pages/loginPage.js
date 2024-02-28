@@ -33,6 +33,7 @@ export class loginPage{
         cy.wait(2000)
    }
 
+
     loginSuccess(){
         cy.contains(this.loginSuccessBtn)
         
