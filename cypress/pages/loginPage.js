@@ -42,4 +42,8 @@ export class loginPage{
     loginFail(){
         cy.get(this.loginFailText)
     }
+
+    TestChange(){
+        cy.get(this.loginFailText)
+    }
 }
