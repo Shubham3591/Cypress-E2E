@@ -33,12 +33,17 @@ export class loginPage{
         cy.wait(2000)
    }
 
+
     loginSuccess(){
         cy.contains(this.loginSuccessBtn)
         
     }
 
     loginFail(){
+        cy.get(this.loginFailText)
+    }
+
+    TestChange(){
         cy.get(this.loginFailText)
     }
 }
